@@ -17,6 +17,8 @@ Person / use (the bike)
 Bike / working (good)
 Docking Station / release
 
+Screenshot 2021-06-01 at 16.50.18 for the diagram.
+
 4. Errors are good
    Error type: NameError (uninitialized constant DockingStation)
    Error file path: directory -> call Ruby -> load request 'define variable' -> output + error
