@@ -15,6 +15,17 @@ describe DockingStation do
     docking_station = DockingStation.new
     expect(docking_station).respond_to?(:bike)
   end
+
+  it 'docks something' do
+    bike = Bike.new
+    expect(subject.dock(bike)).to eq bike
+  end
+
+  it 'returns docked bike' do
+    bike = Bike.new
+    subject.dock(bike)
+    expect(subject.bike).to eq bike
+  end
 end
 
 describe Bike do
@@ -23,5 +34,3 @@ describe Bike do
     expect(bike).respond_to?(:working?)
   end
 end
-
-
