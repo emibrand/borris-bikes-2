@@ -1,8 +1,10 @@
-require 'bikes.rb'
+require 'bikes'
 
 describe DockingStation do
-  it 'releases bike' do
+
+  it 'release a bike from docking station' do
     docking_station = DockingStation.new
-    expect (docking_station.releases).to releases_on
+    expect(docking_station).respond_to?(:release_bike)
   end
+
 end
